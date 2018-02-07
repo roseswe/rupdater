@@ -1,6 +1,7 @@
-# @(#) $Id: rupdater.sh,v 1.10 2017/12/11 07:50:46 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.11 2018/02/07 19:01:31 ralph Exp $
 # --=-----------------------------------------------------------------------=---
 # (c) 1997 - 2018 by Ralph Roth  -*- http://rose.rult.at -*-
+# This script is maintained at: https://github.com/roseswe/rupdater
 
 # There is no integrated update mechanism for our programs. You can use the
 # shell script rupdater.sh if you have a *NIX environment to download updates
@@ -25,6 +26,6 @@ do
      fi
 done
 
-# $Header: /home/cvs/src/prj/web_page/rupdater.sh,v 1.10 2017/12/11 07:50:46 ralph Exp $
+# $Header: /home/cvs/src/prj/web_page/rupdater.sh,v 1.11 2018/02/07 19:01:31 ralph Exp $
 # ------------------------------------------------------------------------
 # atom:set fenc=utf8 ff=unix ft=shell ts=2 et:
