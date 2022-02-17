@@ -1,6 +1,4 @@
-CVS/*
-*.htm*
-*.ico
-*/
-ez_web.txt
-
+.vscode/settings.json
+CVS/Entries
+CVS/Repository
+CVS/Root
