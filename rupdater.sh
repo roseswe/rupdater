@@ -1,7 +1,7 @@
 #!/bin/bash
-# @(#) $Id: rupdater.sh,v 1.18 2022/02/17 07:55:14 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.19 2022/12/14 08:24:55 ralph Exp $
 # --=-----------------------------------------------------------------------=---
-# (c) 1997-2022 by Ralph Roth  -*- http://rose.rult.at -*-
+# (c) 1997-2023 by Ralph Roth  -*- http://rose.rult.at -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
 
 # There is no integrated update mechanism for our programs. You can use the
@@ -38,6 +38,6 @@ rc=$?
 
 exit $rc
 
-# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.18 2022/02/17 07:55:14 ralph Exp $
+# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.19 2022/12/14 08:24:55 ralph Exp $
 # ------------------------------------------------------------------------
 # vim:set fenc=utf8 ff=unix ft=shell ts=2 et:
