@@ -1,7 +1,7 @@
 #!/bin/bash
-# @(#) $Id: rupdater.sh,v 1.19 2022/12/14 08:24:55 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.20 2024/01/26 19:23:02 ralph Exp $
 # --=-----------------------------------------------------------------------=---
-# (c) 1997-2023 by Ralph Roth  -*- http://rose.rult.at -*-
+# (c) 1997-2024 by Ralph Roth  -*- http://rose.rult.at -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
 
 # There is no integrated update mechanism for our programs. You can use the
@@ -17,9 +17,10 @@ wget -qN ${URL}/md5sums.md5 > /dev/null 2>&1 || exit 1
 dos2unix md5sums.md5   2> /dev/null    ## in the case we had used the win32 version of dir2html?
 
 ## 2022: removed: f_mirc, CrCheck, HackStop
+## 2024: added missing Viba, rvct
 
 ## Main/interesting programs:
-for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan  hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh
+for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan viba hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh rvct_
 do
      FILE=$(gawk ' $2 ~ /'${i}'/  { print $2; }; ' md5sums.md5|tail -1)
      # echo "$i=$FILE" # debug
@@ -38,6 +39,6 @@ rc=$?
 
 exit $rc
 
-# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.19 2022/12/14 08:24:55 ralph Exp $
+# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.20 2024/01/26 19:23:02 ralph Exp $
 # ------------------------------------------------------------------------
 # vim:set fenc=utf8 ff=unix ft=shell ts=2 et:
