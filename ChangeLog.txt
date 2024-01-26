@@ -2,8 +2,13 @@ Changelog
 =========
 
 
-(unreleased)
-------------
+1.20 (2024-01-26)
+-----------------
+
+Changes
+~~~~~~~
+- Updated changelog. [roseswe]
+- Moved internal repositories. [roseswe]
 
 Fix
 ~~~
@@ -11,22 +16,22 @@ Fix
 
 Other
 ~~~~~
+- Add: ViBa and rvct. [roseswe]
 - Add: shellcheck, small changes. [roseswe]
+- Add: github url. [roseswe]
 
 
-1.18.0 (2022-02-21)
--------------------
+1.18 (2024-01-26)
+-----------------
 
 Changes
 ~~~~~~~
-- Moved internal repositories. [roseswe]
 - Fixes for MS-Code/ShellCheck. [roseswe]
 - Removed f_mirc etc. added RMS enh: Better error handling. [roseswe]
 - New filenames, less verbose output (#1) [Ralph Roth]
 
 Other
 ~~~~~
-- Add: github url. [roseswe]
 - Small enhancements & fixes. [roseswe]
 - Fixes for URL wrapping. [roseswe]
 - Added gitignore and rupdater.sh. [roseswe]
