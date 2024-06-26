@@ -9,7 +9,9 @@ rose_swe, so we provide the Shell script `rupdater` for the following sites:
 
 You can use the shell script `rupdater.sh` (for <http://rose.rult.at>) if you
 have a *NIX environment to download updates of the programs. The scripts relies
-on standard POSIX commands like wget, awk etc.
+on standard POSIX commands like md5sum, wget, (g)awk, dos2unix, timeout etc.
+
+NOTE: timeout and dos2unix is not installed by default on some distros!
 
 Source code of rupdater can be found at <https://github.com/roseswe/rupdater>
 

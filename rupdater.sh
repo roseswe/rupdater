@@ -1,5 +1,5 @@
 #!/bin/bash
-# @(#) $Id: rupdater.sh,v 1.20 2024/01/26 19:23:02 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.21 2024/06/04 08:08:48 ralph Exp $
 # --=-----------------------------------------------------------------------=---
 # (c) 1997-2024 by Ralph Roth  -*- http://rose.rult.at -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
@@ -8,7 +8,7 @@
 # shell script "rupdater.sh" if you have a *NIX environment to download updates
 # of the program.
 
-echo "ROSE SWE automatic updater for Linux or Win32/cygwin using wget/awk"
+echo "ROSE SWE automatic software updater for Linux or Windows/Cygwin using wget/awk"
 
 URL=http://rose-swe.bplaced.net/dl
 #   -N,  --timestamping            don't re-retrieve files unless newer than
@@ -39,6 +39,6 @@ rc=$?
 
 exit $rc
 
-# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.20 2024/01/26 19:23:02 ralph Exp $
+# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.21 2024/06/04 08:08:48 ralph Exp $
 # ------------------------------------------------------------------------
 # vim:set fenc=utf8 ff=unix ft=shell ts=2 et:
