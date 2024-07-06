@@ -1,23 +1,39 @@
 # rupdater (ROSE SWE Updater)
 
-As there is no integrated automated update mechanism (yet) for the programs from
-rose_swe, so we provide the Shell script `rupdater` for the following sites:
+## Overview
 
-* <http://rose.rult.at/>
+Currently, there is no integrated automated update mechanism for the programs from **rose_swe**. To address this, we provide a shell script, `rupdater`, to facilitate updates from the following sites:
 
-* <http://www.cfg2html.com>
+- [rose.rult.at](http://rose.rult.at/)
+- [cfg2html.com](http://www.cfg2html.com)
 
-You can use the shell script `rupdater.sh` (for <http://rose.rult.at>) if you
-have a *NIX environment to download updates of the programs. The scripts relies
-on standard POSIX commands like md5sum, wget, (g)awk, dos2unix, timeout etc.
+## Usage
 
-NOTE: timeout and dos2unix is not installed by default on some distros!
+### Requirements
 
-Source code of rupdater can be found at <https://github.com/roseswe/rupdater>
+The `rupdater.sh` script is designed for use in a *NIX environment. It utilizes standard POSIX commands such as `md5sum`, `wget`, `(g)awk`, `dos2unix`, `timeout`, and others.
 
-Version numbering/release tags according to CVS tag.
+**Important:** Please note that `timeout` and `dos2unix` are not installed by default on some distributions. You may need to install these utilities manually.
+
+### How to Use
+
+To download updates for the programs from [rose.rult.at](http://rose.rult.at), you can use the `rupdater.sh` script. Ensure your environment meets the requirements and that the necessary commands are available.
+
+## Source Code
+
+The source code for `rupdater` is available on GitHub: [https://github.com/roseswe/rupdater](https://github.com/roseswe/rupdater)
+
+## Versioning
+
+Version numbering and release tags follow the CVS tag convention.
+
+## Known Issues and TODO
+
+- **MD5 Check:** Currently, no MD5 check is performed before downloading a file; it is only conducted afterward. Consequently, if the filename remains the same, the file will not be updated or downloaded. This is an area marked for improvement in future versions.
+
+By using `rupdater`, you can streamline the process of keeping your **rose_swe** programs up-to-date in a *NIX environment. For any issues or contributions, please refer to the source code repository.
 
 <!--
 vim:set fileencoding=utf8 fileformat=unix filetype=gfm tabstop=2 expandtab:
-$Id: README.md,v 1.7 2024/01/26 19:23:02 ralph Exp $
+$Id: README.md,v 1.8 2024/06/26 14:17:26 ralph Exp $
 -->
