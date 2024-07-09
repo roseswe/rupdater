@@ -1,5 +1,5 @@
 #!/bin/bash
-# @(#) $Id: rupdater.sh,v 1.22 2024/07/08 08:49:44 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.23 2024/07/08 21:59:51 ralph Exp $
 # --=-----------------------------------------------------------------------=---
 # (c) 1997-2024 by Ralph Roth  -*- http://rose.rult.at -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
@@ -20,7 +20,7 @@ dos2unix md5sums.md5   2> /dev/null    ## in the case we had used the win32 vers
 ## 2024: added missing Viba, rvct
 
 ## Main/interesting programs:
-for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan viba hashall Hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh rvct_
+for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan viba hashall Hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh rvct_ CrCheck
 do
     FILE=$(gawk ' $2 ~ /'${i}'/  { print $2; }; ' md5sums.md5|tail -1)
     ## echo "$i=$FILE" # debug
@@ -42,6 +42,6 @@ rc=$?
 
 exit $rc
 
-# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.22 2024/07/08 08:49:44 ralph Exp $
+# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.23 2024/07/08 21:59:51 ralph Exp $
 # ------------------------------------------------------------------------
 # vim:set fenc=utf8 ff=unix ft=shell ts=2 et:
