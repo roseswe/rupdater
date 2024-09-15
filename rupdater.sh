@@ -1,5 +1,5 @@
 #!/bin/bash
-# @(#) $Id: rupdater.sh,v 1.23 2024/07/08 21:59:51 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.24 2024/09/15 10:24:59 ralph Exp $
 # --=-----------------------------------------------------------------------=---
 # (c) 1997-2024 by Ralph Roth  -*- http://rose.rult.at -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
@@ -8,7 +8,7 @@
 # shell script "rupdater.sh" if you have a *NIX environment to download updates
 # of the program.
 
-echo "ROSE SWE automatic software updater for Linux or Windows/Cygwin using wget/awk"
+echo "ROSE SWE automatic software updater for Linux, WSL2 or Windows/Cygwin using wget/awk"
 
 URL=http://rose-swe.bplaced.net/dl
 #   -N,  --timestamping            don't re-retrieve files unless newer than
@@ -29,7 +29,7 @@ do
         if [ ! -r "${FILE}" ]
         then
             echo "[!!] ${FILE}: Trying to download new/updated file"
-            timeout 15m  wget -qN -c "${URL}/${FILE}"
+            timeout 18m  wget -qN -c "${URL}/${FILE}"       # rms/100mb might timeout?
         else
             echo "[OK] ${FILE}: No newer version available!"
         fi
@@ -42,6 +42,6 @@ rc=$?
 
 exit $rc
 
-# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.23 2024/07/08 21:59:51 ralph Exp $
+# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.24 2024/09/15 10:24:59 ralph Exp $
 # ------------------------------------------------------------------------
 # vim:set fenc=utf8 ff=unix ft=shell ts=2 et:

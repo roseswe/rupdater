@@ -11,7 +11,9 @@ Currently, there is no integrated automated update mechanism for the programs fr
 
 ### Requirements
 
-The `rupdater.sh` script is designed for use in a *NIX environment. It utilizes standard POSIX commands such as `md5sum`, `wget`, `(g)awk`, `dos2unix`, `timeout`, and others.
+The `rupdater.sh` script is designed for use in a *NIX environment. It utilizes standard POSIX commands such as `md5sum`, `wget`, `(g)awk`, `dos2unix`, `timeout`, and others. The program was tested on various Linux distributions (openSUSE, Ubuntu, SLES and Debian) as well as on cygwin 32/64 for Windows and WSL2.
+
+NOTE: rupdater was tested with Ubuntu 22.04 on WSL2 which works out of the box!
 
 **Important:** Please note that `timeout` and `dos2unix` are not installed by default on some distributions. You may need to install these utilities manually.
 
@@ -35,5 +37,5 @@ By using `rupdater`, you can streamline the process of keeping your **rose_swe**
 
 <!--
 vim:set fileencoding=utf8 fileformat=unix filetype=gfm tabstop=2 expandtab:
-$Id: README.md,v 1.9 2024/07/07 17:34:43 ralph Exp $
+$Id: README.md,v 1.10 2024/09/15 10:24:59 ralph Exp $
 -->
