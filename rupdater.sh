@@ -1,5 +1,5 @@
 #!/bin/bash
-# @(#) $Id: rupdater.sh,v 1.24 2024/09/15 10:24:59 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.25 2024/10/03 14:46:57 ralph Exp $
 # --=-----------------------------------------------------------------------=---
 # (c) 1997-2024 by Ralph Roth  -*- http://rose.rult.at -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
@@ -15,13 +15,15 @@ URL=http://rose-swe.bplaced.net/dl
 wget -qN ${URL}/md5sums.md5 > /dev/null 2>&1 || exit 1
 
 dos2unix md5sums.md5   2> /dev/null    ## in the case we had used the win32 version of dir2html?
+#wc -l md5sums.md5
 
 ## 2022: removed: f_mirc, CrCheck, HackStop
-## 2024: added missing Viba, rvct
+## 2024: added missing Viba, rvct, RFWT_NG
 
 ## Main/interesting programs:
-for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan viba hashall Hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh rvct_ CrCheck
+for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan viba hashall Hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh rvct_ CrCheck RFWT_NG
 do
+    # TODO:/BUG? the tail commands is the root cause that e.g. for the RFWT only one version is checked.... [OK] rfwt_24-10_Setup.exe
     FILE=$(gawk ' $2 ~ /'${i}'/  { print $2; }; ' md5sums.md5|tail -1)
     ## echo "$i=$FILE" # debug
     if [ "$FILE" != "" ]
@@ -42,6 +44,6 @@ rc=$?
 
 exit $rc
 
-# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.24 2024/09/15 10:24:59 ralph Exp $
+# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.25 2024/10/03 14:46:57 ralph Exp $
 # ------------------------------------------------------------------------
 # vim:set fenc=utf8 ff=unix ft=shell ts=2 et:

@@ -2,6 +2,23 @@ Changelog
 =========
 
 
+(unreleased)
+------------
+
+Changes
+~~~~~~~
+- Enhanced readme. [roseswe]
+
+Other
+~~~~~
+- Upd: Tested with WSL2. [roseswe]
+- Add: CrCheck (new) [roseswe]
+- Add: Handling of updated hashall package. [roseswe]
+- 1.21 - updated README and main shell script (mainly additional text)
+  [roseswe]
+- Upd: Updated ChangeLog. [roseswe]
+
+
 1.20 (2024-01-26)
 -----------------
 
