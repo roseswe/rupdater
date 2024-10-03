@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-(unreleased)
-------------
+1.24 (2024-10-03)
+-----------------
 
 Changes
 ~~~~~~~
@@ -11,6 +11,7 @@ Changes
 
 Other
 ~~~~~
+- Add: RFWT_NG. [roseswe]
 - Upd: Tested with WSL2. [roseswe]
 - Add: CrCheck (new) [roseswe]
 - Add: Handling of updated hashall package. [roseswe]
