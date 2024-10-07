@@ -7,6 +7,8 @@ Currently, there is no integrated automated update mechanism for the programs fr
 - [rose.rult.at](http://rose.rult.at/)
 - [cfg2html.com](http://www.cfg2html.com)
 
+As this shell script has some limitations we provide also pre-build binary with the follow up project ["rUpdater2"](https://github.com/roseswe/rupdater2) which also supports Windows environments!
+
 ## Usage
 
 ### Requirements
