@@ -39,5 +39,5 @@ By using `rupdater`, you can streamline the process of keeping your **rose_swe**
 
 <!--
 vim:set fileencoding=utf8 fileformat=unix filetype=gfm tabstop=2 expandtab:
-$Id: README.md,v 1.10 2024/09/15 10:24:59 ralph Exp $
+$Id: README.md,v 1.12 2024/10/07 06:38:42 ralph Exp $
 -->

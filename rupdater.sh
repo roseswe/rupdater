@@ -1,5 +1,5 @@
 #!/bin/bash
-# @(#) $Id: rupdater.sh,v 1.25 2024/10/03 14:46:57 ralph Exp $
+# @(#) $Id: rupdater.sh,v 1.27 2024/10/07 06:38:43 ralph Exp $
 # --=-----------------------------------------------------------------------=---
 # (c) 1997-2024 by Ralph Roth  -*- http://rose.rult.at -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
@@ -44,6 +44,6 @@ rc=$?
 
 exit $rc
 
-# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.25 2024/10/03 14:46:57 ralph Exp $
+# $Header: /home/cvs/src/prj/rupdater/rupdater.sh,v 1.27 2024/10/07 06:38:43 ralph Exp $
 # ------------------------------------------------------------------------
 # vim:set fenc=utf8 ff=unix ft=shell ts=2 et:
