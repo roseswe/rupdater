@@ -6,7 +6,7 @@
 
 Currently, there is no integrated automated update mechanism for the programs from **rose_swe**. To address this, we provide the `rupdater.sh` shell script to facilitate updates from the following sites:
 
-- [rose.rult.at](http://rose.rult.at/)
+- [rose.rult.at](http://rose-swe.bplaced.net/)
 - [cfg2html.com](http://www.cfg2html.com)
 
 Given the limitations of this shell script, we also offer a pre-built binary as part of the follow-up project, [rUpdater2](https://github.com/roseswe/rupdater2), which supports Windows and MacOS environments!
@@ -23,7 +23,7 @@ The `rupdater.sh` script is designed for use in a *NIX environment. It utilizes 
 
 ### How to Use
 
-To download updates for the programs from [rose.rult.at](http://rose.rult.at), simply run the `rupdater.sh` script. Ensure your environment meets the requirements and that the necessary commands are available.
+To download updates for the programs from [rose.rult.at](http://rose-swe.bplaced.net), simply run the `rupdater.sh` script. Ensure your environment meets the requirements and that the necessary commands are available.
 
 ## Source Code
 
@@ -41,5 +41,5 @@ By using **rupdater.sh**, you can streamline the process of keeping your **rose_
 
 <!--
 vim:set fileencoding=utf8 fileformat=unix filetype=gfm tabstop=2 expandtab:
-$Id: README.md,v 1.13 2025/05/30 08:55:57 ralph Exp $
+$Id: README.md,v 1.14 2026/10/30 21:42:21 ralph Exp $
 -->
