@@ -1,7 +1,7 @@
 #!/bin/bash
 # @(#) $Id: rupdater.sh,v 1.29 2026/10/30 21:42:21 ralph Exp $
 # --=-----------------------------------------------------------------------=---
-# (c) 1997-2025 by Ralph Roth  -*- http://rose-swe.bplaced.net -*-
+# (c) 1997-2026 by Ralph Roth  -*- http://rose-swe.bplaced.net -*-
 # This script is maintained at: https://github.com/roseswe/rupdater
 
 # There is no integrated update mechanism for our programs. You can use the
@@ -9,6 +9,7 @@
 # of the program.
 
 echo "ROSE SWE automatic software updater for Linux, WSL2 or Windows/Cygwin using wget/awk"
+echo "This script is OUTDATED and is replaced by the new Go-based rupdater2! DO NOT USE IT ANYMORE!"
 
 URL=http://rose-swe.bplaced.net/dl
 #   -N,  --timestamping            don't re-retrieve files unless newer than
@@ -21,7 +22,7 @@ dos2unix md5sums.md5   2> /dev/null    ## in the case we had used the win32 vers
 ## 2024: added missing Viba, rvct, RFWT_NG
 
 ## Main/interesting programs:
-for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan viba hashall Hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh rvct_ CrCheck RFWT_NG
+for i in rhbvs rms favboot AntiLink rfwt_ VirScanPlus MemScan viba hashall Hashall MPScan dir2html rADFAQ rPCP rUPP rupdater.sh rvct_ CrCheck RFWT_NG rmsng_
 do
     # TODO:/BUG? the tail commands is the root cause that e.g. for the RFWT only one version is checked.... [OK] rfwt_24-10_Setup.exe
     FILE=$(gawk ' $2 ~ /'${i}'/  { print $2; }; ' md5sums.md5|tail -1)
